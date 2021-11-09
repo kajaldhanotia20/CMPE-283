@@ -12,6 +12,10 @@
  * See SDM volume 4, section 2.1
  */
 #define IA32_VMX_PINBASED_CTLS	0x481
+#define IA32_VMX_PROCBASED_CTLS	0x482
+#define IA32_VMX_PROCBASED_CTLS2	0x48B
+#define IA32_VMX_EXIT_CTLS		0x483
+#define IA32_VMX_ENTRY_CTLS		0x484
 
 /*
  * struct caapability_info
@@ -194,6 +198,33 @@ detect_vmx_features(void)
 	pr_info("Pinbased Controls MSR: 0x%llx\n",
 		(uint64_t)(lo | (uint64_t)hi << 32));
 	report_capability(pinbased, 5, lo, hi);
+	
+	/* Procbased Primary Controls */
+	rdmsr(IA32_VMX_PROCBASED_CTLS, lo, hi);
+	pr_info("Procbased Primary Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(procbased, 21, lo, hi);
+	
+	
+	/* Procbased Secondary Controls */
+	rdmsr(IA32_VMX_PROCBASED_CTLS2, lo, hi);
+	pr_info("Procbased Secondary Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(procbased2, 27, lo, hi);
+	
+	
+	/* Exit controls */
+	rdmsr(IA32_VMX_EXIT_CTLS, lo, hi);
+	pr_info("Exit Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(exitctl, 14, lo, hi);
+	
+	
+	/* Entry controls */
+	rdmsr(IA32_VMX_ENTRY_CTLS, lo, hi);
+	pr_info("Entry Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(entryctl, 12, lo, hi);
 }
 
 /*
