@@ -11,5 +11,4 @@ I worked with Kajal for this assignment. On my machine, I retrieved the .c file 
 
 <h3>Steps we followed:</h3>
 1. Retrieve the starter .c file and makefile from canvas
-
-2. Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file
+2.Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file
