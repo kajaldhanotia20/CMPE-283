@@ -10,5 +10,5 @@ Me along with Sumeet worked together to complete CMPE 283 Assignment. First, I c
 I worked with Kajal for this assignment. On my machine, I retrieved the .c file edited by Kajal and added definitions for the different capability info regions. I also added four remaining rdmsr VM feature code. I also created a Ubuntu 20.04.3 VM on my laptop through VMWare Workstation. 
 
 <h3>Steps we followed:</h3>
-1. Retrieve the starter .c file and makefile from canvas
-2.Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file
+1. Retrieve the starter .c file and makefile from canvas.<br>
+2. Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file
