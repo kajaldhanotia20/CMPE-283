@@ -18,24 +18,35 @@ I worked with Kajal for this assignment. On my machine, I retrieved the .c file 
                                                                                                                  <br>
 <h3>Output Screenshots:</h3>
 
-Pinbased control Output:<br>
+<ul>
+  <li>Pinbased control Output:<br>
+    
 ![image](https://user-images.githubusercontent.com/38569308/141735854-90103e4d-440a-4a45-a303-3a35eb1a3653.png)
+    
 <br>
-
-Primary Procbased control output:<br>
+  </li>
+  
+<li>Primary Procbased control output:<br>
+  
 ![image](https://user-images.githubusercontent.com/38569308/141735969-e3806d65-53d4-4378-97f1-23e492b2b2eb.png)
-<br>
+  
+  <br></li>
 
-Secondary Procbased control output:<br>
+<li>Secondary Procbased control output:<br>
+  
 ![image](https://user-images.githubusercontent.com/38569308/141736059-170ce8de-a38d-476b-8df4-e662fdfc8dbc.png)
-<br>
+  
+  <br></li>
 
-Exit controls output:<br>
+<li>Exit controls output:<br>
+  
 ![image](https://user-images.githubusercontent.com/38569308/141736132-98e4a443-cc86-453b-8e49-d6e96f82382b.png)
-<br>
+  
+  <br></li>
 
-Entry controls output:<br>
+<li>Entry controls output:<br>
+  
 ![image](https://user-images.githubusercontent.com/38569308/141736188-9d0d7c5e-37cd-432e-9a63-932bf0a082a9.png)
 
-<br>
+  <br></li>
 
