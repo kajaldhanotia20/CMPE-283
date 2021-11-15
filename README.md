@@ -16,9 +16,14 @@ I worked with Kajal for this assignment. On my machine, I retrieved the .c file 
 4. Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file<br
                                                                                                                  <br>
                                                                                                                  <br>
-<h3>Output Screenshots:</h3>
-
+<h3>Output Screenshots:</h3><br>
 <ul>
+  <li>Make and uname Output with Timestamp and Kernel Version:<br>
+
+![image](https://user-images.githubusercontent.com/38569308/141864519-99849ac9-576d-4744-8c14-feb6be3d1259.png)
+
+<br>
+
   <li>Pinbased control Output:<br>
     
 ![image](https://user-images.githubusercontent.com/38569308/141735854-90103e4d-440a-4a45-a303-3a35eb1a3653.png)
