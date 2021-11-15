@@ -1,9 +1,9 @@
-<h1>CMPE 283 Assignments for Fall 2021</h1>
+<h1>CMPE 283 Assignment-01</h1>
 <h3>By Sumeet Gupta and Kajal Dhanotia</h3>
 
 <h2>Assignment 1</h2>
 
-<h3>Work done by Kajal:</h3>
+<h3>Work done by Kajal (015210884):</h3>
 Me along with Sumeet worked together to complete CMPE 283 Assignment. First, I created the GitHub repository and forked linux repository from torvalds:master. I then retrieved the .c file provided and began editing four remaining structs. I referred to the Intel SDM for doing this.
 
 <h3>Work done by Sumeet:</h3>
