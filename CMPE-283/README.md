@@ -13,4 +13,29 @@ I worked with Kajal for this assignment. On my machine, I retrieved the .c file 
 1. Download and install vmware workstation on laptop.<br>
 2. Create an Ubintu 20.02.3 virtual machine (4 GB RAM and 100 GB Hark Disk)<br>
 3. Retrieve the starter .c file and makefile from canvas.<br>
-4. Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file<br>
+4. Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file<br
+                                                                                                                 <br>
+                                                                                                                 <br>
+<h3>Output Screenshots:</h3>
+
+Pinbased control Output:<br>
+![image](https://user-images.githubusercontent.com/38569308/141735854-90103e4d-440a-4a45-a303-3a35eb1a3653.png)
+<br>
+
+Primary Procbased control output:<br>
+![image](https://user-images.githubusercontent.com/38569308/141735969-e3806d65-53d4-4378-97f1-23e492b2b2eb.png)
+<br>
+
+Secondary Procbased control output:<br>
+![image](https://user-images.githubusercontent.com/38569308/141736059-170ce8de-a38d-476b-8df4-e662fdfc8dbc.png)
+<br>
+
+Exit controls output:<br>
+![image](https://user-images.githubusercontent.com/38569308/141736132-98e4a443-cc86-453b-8e49-d6e96f82382b.png)
+<br>
+
+Entry controls output:<br>
+![image](https://user-images.githubusercontent.com/38569308/141736188-9d0d7c5e-37cd-432e-9a63-932bf0a082a9.png)
+
+<br>
+
