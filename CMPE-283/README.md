@@ -14,12 +14,13 @@ I worked with Kajal for this assignment. On my machine, I retrieved the .c file 
 2. Create an Ubuntu 20.04.3 virtual machine (4 GB RAM and 100 GB Hard Disk) <br>
 3. Retrieve the starter .c file and makefile from canvas. <br>
 4. Study about the controls that are used in assignment.
-MSR Name	MSR Index	Description	References
-IA32_VMX_PINBASED_CTLS	0x481	This MSR is used for pinbased controls if no true controls capability	SDM volume 3C, section 24.6.1
-IA32_VMX_PROCBASED_CTLS	0x482	This MSR is used for primary procbased controls if no true controls capability	SDM volume 3C, section 24.6.2
-IA32_VMX_PROCBASED_CTLS2	0x48B	This MSR is used for secondary procbased controls if available	SDM volume 3C, section 24.6.2
-IA32_VMX_EXIT_CTLS	0x483	This MSR is used for exit controls if no true controls capability	SDM volume 3C, section 24.7.1
-IA32_VMX_ENTRY_CTLS	0x484	This MSR is used for entry controls if no true controls capability	SDM volume 3C, section 24.8.1
+| MSR Name |	MSR Index |	Description |	References |
+| :--- | :--- | :--- | :--- |
+| IA32_VMX_PINBASED_CTLS |	0x481 |	This MSR is used for pinbased controls if no true controls capability |	SDM volume 3C, section 24.6.1 |
+| IA32_VMX_PROCBASED_CTLS |	0x482 |	This MSR is used for primary procbased controls if no true controls capability |	SDM volume 3C, section 24.6.2 |
+| IA32_VMX_PROCBASED_CTLS2 |	0x48B |	This MSR is used for secondary procbased controls if available |	SDM volume 3C, section 24.6.2 |
+| IA32_VMX_EXIT_CTLS |	0x483 |	This MSR is used for exit controls if no true controls capability |	SDM volume 3C, section 24.7.1 |
+| IA32_VMX_ENTRY_CTLS |	0x484 |	This MSR is used for entry controls if no true controls capability |	SDM volume 3C, section 24.8.1 |
 
 5. Add capability structs based on info from SDM and make calls to rdmsr and report_capability in the .c file<br>
 6. In the directory of the .c file and makefile, call ‘make’. <br>
