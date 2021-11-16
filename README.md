@@ -1,7 +1,7 @@
-<h1>CMPE 283 Assignment-01</h1>
+<h1>CMPE 283 Assignments</h1>
 <h3>By Sumeet Gupta and Kajal Dhanotia</h3>
 
-<h2>Assignment 1</h2>
+<h2>Assignment-01</h2>
 
 <h3>Work done by Sumeet (015252003):</h3>
 I worked with Kajal for this assignment. On my machine, I retrieved the .c file edited by Kajal and added definitions for the different capability info regions by referring Intel SDM. I also added four remaining rdmsr VM features code. I then created an Ubuntu 20.04.3 VM on my laptop through VMWare Workstation. I installed required packages onto it but I faced multiple issues on the VM while executing make command. The make modules command ran for one entire night probably because of low RAM of thr VM. We then later decided to work on Google Cloud for the assignment.<br>
