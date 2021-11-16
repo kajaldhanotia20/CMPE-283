@@ -6,7 +6,7 @@
 <h3>Work done by Kajal (015210884):</h3>
 Me along with Sumeet worked together to complete CMPE 283 Assignment. First, I created the GitHub repository and forked linux repository from torvalds:master. I then retrieved the .c file provided and began editing four remaining structs. I referred to the Intel SDM for doing this. I started working on google cloud. I made GCP VM instance and worked on below mentioned steps.
 
-<h3>Work done by Sumeet(015252003):</h3>
+<h3>Work done by Sumeet (015252003):</h3>
 I worked with Kajal for this assignment. On my machine, I retrieved the .c file edited by Kajal and added definitions for the different capability info regions by referring Intel SDM. I also added four remaining rdmsr VM feature code. I also created an Ubuntu 20.04.3 VM on my laptop through VMWare Workstation. I faced multiple issues on VMWare Workstation while executing make command but then we later decided to work on GCP VM instance.
 
 <h3>Steps followed:</h3>
@@ -14,6 +14,8 @@ I worked with Kajal for this assignment. On my machine, I retrieved the .c file 
 2. Create an Ubuntu 20.04.3 virtual machine (4 GB RAM and 100 GB Hard Disk) <br>
 3. Retrieve the starter .c file and makefile from canvas. <br>
 4. Study about the controls that are used in assignment.
+
+
 | MSR Name |	MSR Index |	Description |	References |
 | :--- | :--- | :--- | :--- |
 | IA32_VMX_PINBASED_CTLS |	0x481 |	This MSR is used for pinbased controls if no true controls capability |	SDM volume 3C, section 24.6.1 |
