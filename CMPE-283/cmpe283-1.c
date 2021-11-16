@@ -31,7 +31,7 @@ struct capability_info {
 
 /*
  * Pinbased capabilities
- * See SDM volume 3, section 24.6.1
+ * See SDM volume 3C, section 24.6.1
  */
 struct capability_info pinbased[5] =
 {
@@ -43,6 +43,7 @@ struct capability_info pinbased[5] =
 };
 /*
  * Procbased capabilities (primary)
+ * See SDM volume 3C, section 24.6.2
  */
 
 struct capability_info procbased[21] =
@@ -73,6 +74,7 @@ struct capability_info procbased[21] =
 
 /*
  * Procbased capabilities (secondary)
+ * See SDM volume 3C, section 24.6.2
  */
 
 struct capability_info procbased2[27] =
@@ -109,6 +111,7 @@ struct capability_info procbased2[27] =
 
 /*
  * exit capabilities
+ * See SDM volume 3C, section 24.7.1
  */
 struct capability_info exitctl[14] =
 {
@@ -131,6 +134,7 @@ struct capability_info exitctl[14] =
 
 /*
  * entry capabilities
+ * See SDM volume 3C, section 24.8.1
  */
 
 struct capability_info entryctl[12] =
