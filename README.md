@@ -41,8 +41,12 @@ Me along with Sumeet worked together to complete CMPE 283 Assignment. First, I c
 17. Run the ``` dmesg ``` command to display the output printed on the system message buffer console.<br>
   
 <h3>Output Screenshots:</h3>
-
 <ul>
+<li>Final make command output with timestamp and kernel version:<br>
+
+![image](https://user-images.githubusercontent.com/38569308/141919965-c990c13b-0442-4e74-9efe-8784bfa29f96.png)
+
+<br>
   <li>Pinbased control Output:<br>
     
 ![image](https://user-images.githubusercontent.com/38569308/141735854-90103e4d-440a-4a45-a303-3a35eb1a3653.png)
