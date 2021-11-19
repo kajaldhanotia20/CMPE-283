@@ -1246,12 +1246,13 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 	ecx = kvm_rcx_read(vcpu);
 
 if (eax == 0x4FFFFFFF) {	
-                long time = atomic_long_read(&numberOfCycles);	
+                	
                 // return the total number of exits in %eax
 				eax = atomic_read(&numberOfExits);	 
         }
 
 else if (eax == 0x4FFFFFFE){
+		long time = atomic_long_read(&numberOfCycles);
 				// return the high 32 bits of the total time spent processing all exits in ebx		
                 ebx = time >> 32;	
 				// return the low 32 bits of the total time spent processing all exits in ecx	
