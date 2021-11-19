@@ -14,7 +14,7 @@
 #include <linux/vmalloc.h>
 #include <linux/uaccess.h>
 #include <linux/sched/stat.h>
-#include <stdatomic.h>
+
 
 #include <asm/processor.h>
 #include <asm/user.h>
