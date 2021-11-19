@@ -1274,8 +1274,5 @@ else {
 }
 EXPORT_SYMBOL_GPL(kvm_emulate_cpuid);
 EXPORT_SYMBOL_GPL(numberOfExits);
-<<<<<<< HEAD
 EXPORT_SYMBOL_GPL(numberOfCycles);
-=======
-EXPORT_SYMBOL_GPL(numberOfCycles);
->>>>>>> 97323d110f9ba32b89cdf8e9212f4a49423ffa43
+
