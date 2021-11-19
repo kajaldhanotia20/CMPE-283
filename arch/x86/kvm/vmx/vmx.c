@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Kernel-based Virtual Machine driver for Linux
@@ -16134,4 +16134,4 @@ static int __init vmx_init(void)
 	return 0;
 }
 module_init(vmx_init);
->>>>>>> 97323d110f9ba32b89cdf8e9212f4a49423ffa43
+
