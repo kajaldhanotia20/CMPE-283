@@ -77,4 +77,16 @@ Me along with Sumeet worked together to complete CMPE 283 Assignment. First, I c
 ![image](https://user-images.githubusercontent.com/38569308/141736188-9d0d7c5e-37cd-432e-9a63-932bf0a082a9.png)
 
   <br></li>
+  
+  
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  
+<h2>Assignment-02-Instrumentation via hypercall</h2>
 
+<h3>Work done by Kajal (015210884):</h3>
+We began working on the assignment 02 once our assignment 01 environment was built successfully. We decided to edit the cpuid.c and vmx.c at first and then rebuild the kernel. I edited the cpuid.c and added if..else condition in the kvm_emulate_cpuid block code and commited it to the GitHub repo inside /arch/x86/kvm. After Sumemet commited the changes he made to vmx.c, I rebuilt the kernel and rebooted the VM. I also installed KVM on the hypervisor so that a guest VM can be created using virt-manager.  <br>
+  
+<h3>Work done by Sumeet (015252003):</h3>
+I worked with Kajal for this assignment. On my machine, I edited the vmx.c file according to the edits made in cpuid.c by Kajal. I pushed the changed to GitHub. I then tried to rebuild the kernel. There were some error encountered such as <br>
+
+<h3>Steps followed:</h3>
