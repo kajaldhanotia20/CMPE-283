@@ -15,7 +15,6 @@
 #include <linux/uaccess.h>
 #include <linux/sched/stat.h>
 
-
 #include <asm/processor.h>
 #include <asm/user.h>
 #include <asm/fpu/xstate.h>
@@ -25,7 +24,6 @@
 #include "mmu.h"
 #include "trace.h"
 #include "pmu.h"
-
 
 /*
  * Unlike "struct cpuinfo_x86.x86_capability", kvm_cpu_caps doesn't need to be
@@ -1232,9 +1230,6 @@ bool kvm_cpuid(struct kvm_vcpu *vcpu, u32 *eax, u32 *ebx,
 }
 EXPORT_SYMBOL_GPL(kvm_cpuid);
 
-atomic_t numberOfExits = ATOMIC_INIT(0);
-atomic_long_t numberOfCycles = ATOMIC_INIT(0);
-
 int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 {
 	u32 eax, ebx, ecx, edx;
@@ -1244,29 +1239,7 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 
 	eax = kvm_rax_read(vcpu);
 	ecx = kvm_rcx_read(vcpu);
-
-if (eax == 0x4FFFFFFF) {	
-                	
-                // return the total number of exits in %eax
-				eax = atomic_read(&numberOfExits);	 
-        }
-
-else if (eax == 0x4FFFFFFE){
-		long time = atomic_long_read(&numberOfCycles);
-				// return the high 32 bits of the total time spent processing all exits in ebx		
-                ebx = time >> 32;	
-				// return the low 32 bits of the total time spent processing all exits in ecx	
-                ecx = (u32) time;
-                edx = 0x1996;	    	
-                printk("CPUID(0x4FFFFFFE), exits= %d, cycles spent in exit= %ld", atomic_read(&numberOfExits), atomic_long_read(&numberOfCycles));	
-        } 
-        
-else {	
-                
-                kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, false);	
-        
-        }
-
+	kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, false);
 	kvm_rax_write(vcpu, eax);
 	kvm_rbx_write(vcpu, ebx);
 	kvm_rcx_write(vcpu, ecx);
@@ -1274,6 +1247,3 @@ else {
 	return kvm_skip_emulated_instruction(vcpu);
 }
 EXPORT_SYMBOL_GPL(kvm_emulate_cpuid);
-EXPORT_SYMBOL_GPL(numberOfExits);
-EXPORT_SYMBOL_GPL(numberOfCycles);
-
